@@ -1,1 +1,1 @@
-# LeETCODE
+A curated collection of my solutions to LeetCode problems, written in Java. This repository is part of my journey to master Data Structures and Algorithms (DSA) through consistent problem-solving and learning.
