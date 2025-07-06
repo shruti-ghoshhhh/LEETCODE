@@ -1,14 +1,8 @@
 class Solution {
     public char findTheDifference(String s, String t) {
-        HashMap<Character, Integer> map=new HashMap<>();
-        for(char c: s.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0)+1);
-        }
-
-        for(char c:t.toCharArray()){
-            map.put(c, map.getOrDefault(c,0)-1);
-            if(map.get(c)<0) return c;
-        }
-        return ' ';
+        char result = 0;
+        for (char c : s.toCharArray()) result ^= c;
+        for (char c : t.toCharArray()) result ^= c;
+        return result;
     }
 }
